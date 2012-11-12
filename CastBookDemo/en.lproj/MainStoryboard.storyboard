@@ -16,14 +16,14 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpf-Hz-wdg">
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HZm-vF-ZTy">
+                                            <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HZm-vF-ZTy">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" type="user" id="7iV-r4-bXZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEJ-3o-H9X">
+                                            <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEJ-3o-H9X">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="yWZ-9J-MGa"/>
                                                 </constraints>
@@ -39,6 +39,7 @@
                                             <constraint firstItem="wEJ-3o-H9X" firstAttribute="top" secondItem="HZm-vF-ZTy" secondAttribute="bottom" constant="5" type="user" id="cow-9y-vnn"/>
                                             <constraint firstItem="wEJ-3o-H9X" firstAttribute="leading" secondItem="Lpf-Hz-wdg" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="daa-A1-5JV"/>
                                             <constraint firstItem="HZm-vF-ZTy" firstAttribute="leading" secondItem="Lpf-Hz-wdg" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hsg-UH-gxR"/>
+                                            <constraint firstAttribute="bottom" secondItem="wEJ-3o-H9X" secondAttribute="bottom" constant="4" type="user" id="vep-Cb-Cc6"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToI-t5-C4A">
@@ -55,19 +56,20 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ToI-t5-C4A" firstAttribute="leading" secondItem="PJd-X9-BG7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4cs-Kb-mzb"/>
-                                    <constraint firstItem="Lpf-Hz-wdg" firstAttribute="top" secondItem="PJd-X9-BG7" secondAttribute="top" constant="20" symbolic="YES" type="default" id="AEb-jZ-AfF"/>
+                                    <constraint firstItem="Lpf-Hz-wdg" firstAttribute="top" secondItem="PJd-X9-BG7" secondAttribute="top" constant="20" symbolic="YES" type="user" id="AEb-jZ-AfF"/>
                                     <constraint firstAttribute="trailing" secondItem="Lpf-Hz-wdg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Byi-JE-ouN"/>
                                     <constraint firstAttribute="trailing" secondItem="ToI-t5-C4A" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XlX-28-srN"/>
                                     <constraint firstItem="Lpf-Hz-wdg" firstAttribute="leading" secondItem="PJd-X9-BG7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Zqq-xZ-0MN"/>
-                                    <constraint firstAttribute="bottom" secondItem="ToI-t5-C4A" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="aKV-y4-AMW"/>
-                                    <constraint firstItem="ToI-t5-C4A" firstAttribute="top" secondItem="Lpf-Hz-wdg" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ozN-Zq-IAS"/>
+                                    <constraint firstAttribute="bottom" secondItem="ToI-t5-C4A" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="aKV-y4-AMW"/>
+                                    <constraint firstAttribute="height" constant="168" type="user" id="iDB-2J-glu"/>
+                                    <constraint firstItem="ToI-t5-C4A" firstAttribute="top" secondItem="Lpf-Hz-wdg" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="ozN-Zq-IAS"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PJd-X9-BG7" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="1Ch-Vf-oqM"/>
-                            <constraint firstItem="PJd-X9-BG7" firstAttribute="top" secondItem="3" secondAttribute="top" constant="190" id="INk-7l-YBg"/>
+                            <constraint firstItem="PJd-X9-BG7" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="user" id="1Ch-Vf-oqM"/>
+                            <constraint firstItem="PJd-X9-BG7" firstAttribute="top" relation="lessThanOrEqual" secondItem="3" secondAttribute="top" constant="190" type="user" id="INk-7l-YBg"/>
                             <constraint firstAttribute="centerX" secondItem="PJd-X9-BG7" secondAttribute="centerX" type="user" id="Ylq-ex-xzs"/>
                             <constraint firstItem="PJd-X9-BG7" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="fts-dA-eCH"/>
                         </constraints>
