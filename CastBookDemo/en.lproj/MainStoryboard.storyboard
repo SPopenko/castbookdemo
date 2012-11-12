@@ -51,6 +51,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Jmw-JX-Lgx" kind="modal" modalTransitionStyle="flipHorizontal" id="3oj-7b-m7o"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -77,13 +80,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="270" y="43"/>
+        </scene>
+        <!--Table View Controller - Navigation-->
+        <scene sceneID="uHv-xP-fxh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUG-GS-YUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="Navigation" id="xkj-5m-m3J" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="z01-Hr-3oA">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TMB-aX-Qbg">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="AkN-XO-YJd" kind="push" id="zlH-hK-W0d"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="XvE-vN-ipU"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1354" y="43"/>
+        </scene>
+        <!--Navigation Top View Controller-->
+        <scene sceneID="6PC-hD-3To">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Jmw-JX-Lgx" customClass="NavigationTopViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="goS-Bz-DtU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eDl-cy-FFh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xkj-5m-m3J" kind="relationship" relationship="rootViewController" id="fh9-O1-voM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXt-Qt-TkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="43"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gGm-Fc-HoQ">
+            <objects>
+                <viewController id="AkN-XO-YJd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uCc-PS-syq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bF3-63-2z5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfA-cQ-ek6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="43"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

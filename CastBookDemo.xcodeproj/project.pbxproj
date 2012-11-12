@@ -20,6 +20,12 @@
 		1F31FDE31651236B00A36208 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDE21651236B00A36208 /* SignInViewController.m */; };
 		1F31FDEF165129E400A36208 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDEC165129E400A36208 /* ECSlidingViewController.m */; };
 		1F31FDF0165129E400A36208 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDEE165129E400A36208 /* UIImage+ImageWithUIView.m */; };
+		1F31FDF716512F4100A36208 /* NavigationTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDF616512F4100A36208 /* NavigationTopViewController.m */; };
+		1F31FDFA165131BF00A36208 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDF9165131BF00A36208 /* MenuViewController.m */; };
+		1F31FDFD165133EB00A36208 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDFC165133EB00A36208 /* ProfileViewController.m */; };
+		1F31FE071651349300A36208 /* AuditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE061651349300A36208 /* AuditionsViewController.m */; };
+		1F31FE0C165134CE00A36208 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE09165134CE00A36208 /* CalendarViewController.m */; };
+		1F31FE0D165134CE00A36208 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE0B165134CE00A36208 /* MessagesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +49,18 @@
 		1F31FDEC165129E400A36208 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		1F31FDED165129E400A36208 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
 		1F31FDEE165129E400A36208 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		1F31FDF516512F4100A36208 /* NavigationTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationTopViewController.h; path = Controllers/NavigationTopViewController.h; sourceTree = "<group>"; };
+		1F31FDF616512F4100A36208 /* NavigationTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationTopViewController.m; path = Controllers/NavigationTopViewController.m; sourceTree = "<group>"; };
+		1F31FDF8165131BF00A36208 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Controllers/MenuViewController.h; sourceTree = "<group>"; };
+		1F31FDF9165131BF00A36208 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Controllers/MenuViewController.m; sourceTree = "<group>"; };
+		1F31FDFB165133EB00A36208 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Controllers/ProfileViewController.h; sourceTree = "<group>"; };
+		1F31FDFC165133EB00A36208 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Controllers/ProfileViewController.m; sourceTree = "<group>"; };
+		1F31FE051651349300A36208 /* AuditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuditionsViewController.h; path = Controllers/AuditionsViewController.h; sourceTree = "<group>"; };
+		1F31FE061651349300A36208 /* AuditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuditionsViewController.m; path = Controllers/AuditionsViewController.m; sourceTree = "<group>"; };
+		1F31FE08165134CE00A36208 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewController.h; path = Controllers/CalendarViewController.h; sourceTree = "<group>"; };
+		1F31FE09165134CE00A36208 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewController.m; path = Controllers/CalendarViewController.m; sourceTree = "<group>"; };
+		1F31FE0A165134CE00A36208 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessagesViewController.h; path = Controllers/MessagesViewController.h; sourceTree = "<group>"; };
+		1F31FE0B165134CE00A36208 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessagesViewController.m; path = Controllers/MessagesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +140,20 @@
 		1F31FDDF1651231800A36208 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F31FE08165134CE00A36208 /* CalendarViewController.h */,
+				1F31FE09165134CE00A36208 /* CalendarViewController.m */,
+				1F31FE0A165134CE00A36208 /* MessagesViewController.h */,
+				1F31FE0B165134CE00A36208 /* MessagesViewController.m */,
 				1F31FDE11651236B00A36208 /* SignInViewController.h */,
 				1F31FDE21651236B00A36208 /* SignInViewController.m */,
+				1F31FDF516512F4100A36208 /* NavigationTopViewController.h */,
+				1F31FDF616512F4100A36208 /* NavigationTopViewController.m */,
+				1F31FDF8165131BF00A36208 /* MenuViewController.h */,
+				1F31FDF9165131BF00A36208 /* MenuViewController.m */,
+				1F31FDFB165133EB00A36208 /* ProfileViewController.h */,
+				1F31FDFC165133EB00A36208 /* ProfileViewController.m */,
+				1F31FE051651349300A36208 /* AuditionsViewController.h */,
+				1F31FE061651349300A36208 /* AuditionsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -220,6 +250,12 @@
 				1F31FDE31651236B00A36208 /* SignInViewController.m in Sources */,
 				1F31FDEF165129E400A36208 /* ECSlidingViewController.m in Sources */,
 				1F31FDF0165129E400A36208 /* UIImage+ImageWithUIView.m in Sources */,
+				1F31FDF716512F4100A36208 /* NavigationTopViewController.m in Sources */,
+				1F31FDFA165131BF00A36208 /* MenuViewController.m in Sources */,
+				1F31FDFD165133EB00A36208 /* ProfileViewController.m in Sources */,
+				1F31FE071651349300A36208 /* AuditionsViewController.m in Sources */,
+				1F31FE0C165134CE00A36208 /* CalendarViewController.m in Sources */,
+				1F31FE0D165134CE00A36208 /* MessagesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
