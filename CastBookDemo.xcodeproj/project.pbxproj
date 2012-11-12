@@ -30,6 +30,8 @@
 		1F31FE18165162D800A36208 /* Messages.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE17165162D800A36208 /* Messages.png */; };
 		1F31FE1A1651637900A36208 /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE191651637900A36208 /* Profile.png */; };
 		1F31FE1C165163B800A36208 /* Audition.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE1B165163B800A36208 /* Audition.png */; };
+		1F31FE1F165166C700A36208 /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE1E165166C600A36208 /* WallViewController.m */; };
+		1F31FE211651676F00A36208 /* Wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE201651676F00A36208 /* Wall.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,9 @@
 		1F31FE17165162D800A36208 /* Messages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Messages.png; sourceTree = "<group>"; };
 		1F31FE191651637900A36208 /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
 		1F31FE1B165163B800A36208 /* Audition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Audition.png; sourceTree = "<group>"; };
+		1F31FE1D165166C600A36208 /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallViewController.h; sourceTree = "<group>"; };
+		1F31FE1E165166C600A36208 /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallViewController.m; sourceTree = "<group>"; };
+		1F31FE201651676F00A36208 /* Wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,20 +153,22 @@
 		1F31FDDF1651231800A36208 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F31FDE11651236B00A36208 /* SignInViewController.h */,
+				1F31FDE21651236B00A36208 /* SignInViewController.m */,
+				1F31FE11165147B000A36208 /* InitialSlidingViewController.h */,
+				1F31FE12165147B100A36208 /* InitialSlidingViewController.m */,
+				1F31FDF8165131BF00A36208 /* MenuViewController.h */,
+				1F31FDF9165131BF00A36208 /* MenuViewController.m */,
 				1F31FE08165134CE00A36208 /* CalendarViewController.h */,
 				1F31FE09165134CE00A36208 /* CalendarViewController.m */,
 				1F31FE0A165134CE00A36208 /* MessagesViewController.h */,
 				1F31FE0B165134CE00A36208 /* MessagesViewController.m */,
-				1F31FDE11651236B00A36208 /* SignInViewController.h */,
-				1F31FDE21651236B00A36208 /* SignInViewController.m */,
-				1F31FDF8165131BF00A36208 /* MenuViewController.h */,
-				1F31FDF9165131BF00A36208 /* MenuViewController.m */,
 				1F31FDFB165133EB00A36208 /* ProfileViewController.h */,
 				1F31FDFC165133EB00A36208 /* ProfileViewController.m */,
 				1F31FE051651349300A36208 /* AuditionsViewController.h */,
 				1F31FE061651349300A36208 /* AuditionsViewController.m */,
-				1F31FE11165147B000A36208 /* InitialSlidingViewController.h */,
-				1F31FE12165147B100A36208 /* InitialSlidingViewController.m */,
+				1F31FE1D165166C600A36208 /* WallViewController.h */,
+				1F31FE1E165166C600A36208 /* WallViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 		1F31FE141651624300A36208 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				1F31FE201651676F00A36208 /* Wall.png */,
 				1F31FE1B165163B800A36208 /* Audition.png */,
 				1F31FE191651637900A36208 /* Profile.png */,
 				1F31FE17165162D800A36208 /* Messages.png */,
@@ -259,6 +267,7 @@
 				1F31FE18165162D800A36208 /* Messages.png in Resources */,
 				1F31FE1A1651637900A36208 /* Profile.png in Resources */,
 				1F31FE1C165163B800A36208 /* Audition.png in Resources */,
+				1F31FE211651676F00A36208 /* Wall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +289,7 @@
 				1F31FE0C165134CE00A36208 /* CalendarViewController.m in Sources */,
 				1F31FE0D165134CE00A36208 /* MessagesViewController.m in Sources */,
 				1F31FE13165147B200A36208 /* InitialSlidingViewController.m in Sources */,
+				1F31FE1F165166C700A36208 /* WallViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
