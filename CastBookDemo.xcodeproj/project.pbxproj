@@ -18,6 +18,8 @@
 		1F31FDCD16511D5C00A36208 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FDCC16511D5C00A36208 /* Default-568h@2x.png */; };
 		1F31FDD016511D5C00A36208 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FDCE16511D5C00A36208 /* MainStoryboard.storyboard */; };
 		1F31FDE31651236B00A36208 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDE21651236B00A36208 /* SignInViewController.m */; };
+		1F31FDEF165129E400A36208 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDEC165129E400A36208 /* ECSlidingViewController.m */; };
+		1F31FDF0165129E400A36208 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDEE165129E400A36208 /* UIImage+ImageWithUIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		1F31FDCF16511D5C00A36208 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1F31FDE11651236B00A36208 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = Controllers/SignInViewController.h; sourceTree = "<group>"; };
 		1F31FDE21651236B00A36208 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = Controllers/SignInViewController.m; sourceTree = "<group>"; };
+		1F31FDEB165129E400A36208 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		1F31FDEC165129E400A36208 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		1F31FDED165129E400A36208 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		1F31FDEE165129E400A36208 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		1F31FDBC16511D5B00A36208 /* CastBookDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F31FDEA165129E400A36208 /* ECSlidingViewController */,
 				1F31FDDF1651231800A36208 /* Controllers */,
 				1F31FDDE1651230B00A36208 /* Resources */,
 				1F31FDC516511D5C00A36208 /* AppDelegate.h */,
@@ -129,6 +136,17 @@
 				1F31FDCC16511D5C00A36208 /* Default-568h@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		1F31FDEA165129E400A36208 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1F31FDEB165129E400A36208 /* ECSlidingViewController.h */,
+				1F31FDEC165129E400A36208 /* ECSlidingViewController.m */,
+				1F31FDED165129E400A36208 /* UIImage+ImageWithUIView.h */,
+				1F31FDEE165129E400A36208 /* UIImage+ImageWithUIView.m */,
+			);
+			path = ECSlidingViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +218,8 @@
 				1F31FDC316511D5C00A36208 /* main.m in Sources */,
 				1F31FDC716511D5C00A36208 /* AppDelegate.m in Sources */,
 				1F31FDE31651236B00A36208 /* SignInViewController.m in Sources */,
+				1F31FDEF165129E400A36208 /* ECSlidingViewController.m in Sources */,
+				1F31FDF0165129E400A36208 /* UIImage+ImageWithUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
