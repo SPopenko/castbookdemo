@@ -215,7 +215,7 @@
                                     <constraint firstAttribute="height" constant="44" id="yzg-Pn-tJ2"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Calendar" id="0ER-Js-Rrp">
+                                    <navigationItem title="Wall" id="0ER-Js-Rrp">
                                         <barButtonItem key="leftBarButtonItem" title="Menu" id="xdh-hp-IWA">
                                             <connections>
                                                 <action selector="revealMenu:" destination="9Ck-uo-qQi" id="6z1-A5-twm"/>
