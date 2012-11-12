@@ -88,6 +88,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nG0-fl-XVQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iOJ-EH-JbD"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Auditions" id="4bC-0P-HDU">
                                         <barButtonItem key="leftBarButtonItem" title="Menu" id="xMR-pB-95a">
@@ -98,12 +101,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Audition.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7i-Js-1o4"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="P7i-Js-1o4" firstAttribute="top" secondItem="nG0-fl-XVQ" secondAttribute="bottom" type="default" id="BpV-pa-CGl"/>
                             <constraint firstItem="nG0-fl-XVQ" firstAttribute="trailing" secondItem="261-63-aBg" secondAttribute="trailing" type="default" id="PLJ-Km-s2k"/>
                             <constraint firstItem="nG0-fl-XVQ" firstAttribute="leading" secondItem="261-63-aBg" secondAttribute="leading" type="default" id="SnG-4j-30K"/>
+                            <constraint firstItem="P7i-Js-1o4" firstAttribute="bottom" secondItem="261-63-aBg" secondAttribute="bottom" type="default" id="XFU-fr-Ewp"/>
                             <constraint firstItem="nG0-fl-XVQ" firstAttribute="top" secondItem="261-63-aBg" secondAttribute="top" type="default" id="c2e-aP-Ki7"/>
+                            <constraint firstItem="P7i-Js-1o4" firstAttribute="leading" secondItem="261-63-aBg" secondAttribute="leading" type="default" id="fc9-gV-xxg"/>
+                            <constraint firstItem="P7i-Js-1o4" firstAttribute="trailing" secondItem="261-63-aBg" secondAttribute="trailing" type="default" id="unq-NL-3Nj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -123,6 +131,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIW-YB-hgG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hC3-wu-OYc"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Profile" id="6pC-ps-OlW">
                                         <barButtonItem key="leftBarButtonItem" title="Menu" id="KIR-7f-AzE">
@@ -133,12 +144,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="U8r-Hd-DCp"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PIW-YB-hgG" firstAttribute="trailing" secondItem="t1k-bL-oMZ" secondAttribute="trailing" type="default" id="Icv-Tt-xOL"/>
+                            <constraint firstItem="U8r-Hd-DCp" firstAttribute="bottom" secondItem="t1k-bL-oMZ" secondAttribute="bottom" type="default" id="OsB-Ty-aRK"/>
+                            <constraint firstItem="U8r-Hd-DCp" firstAttribute="leading" secondItem="t1k-bL-oMZ" secondAttribute="leading" type="default" id="ehl-c4-pM3"/>
                             <constraint firstItem="PIW-YB-hgG" firstAttribute="leading" secondItem="t1k-bL-oMZ" secondAttribute="leading" type="default" id="jx6-X2-VqO"/>
                             <constraint firstItem="PIW-YB-hgG" firstAttribute="top" secondItem="t1k-bL-oMZ" secondAttribute="top" type="default" id="rg1-S3-Nmf"/>
+                            <constraint firstItem="U8r-Hd-DCp" firstAttribute="top" secondItem="PIW-YB-hgG" secondAttribute="bottom" type="default" id="yCe-Fb-SCC"/>
+                            <constraint firstItem="U8r-Hd-DCp" firstAttribute="trailing" secondItem="t1k-bL-oMZ" secondAttribute="trailing" type="default" id="yhI-vA-sky"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -155,6 +171,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btv-4r-vXR">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="h1p-ay-AVQ"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Calendar" id="wO2-Uj-hUp">
                                         <barButtonItem key="leftBarButtonItem" title="Menu" id="e0S-zN-Idb">
@@ -165,11 +184,16 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Calendar.png" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-LC-J5P"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="btv-4r-vXR" firstAttribute="leading" secondItem="Y9g-ao-PlM" secondAttribute="leading" type="default" id="0hb-Oo-PC6"/>
                             <constraint firstItem="btv-4r-vXR" firstAttribute="trailing" secondItem="Y9g-ao-PlM" secondAttribute="trailing" type="default" id="Fu6-Xe-Xi9"/>
+                            <constraint firstItem="jXj-LC-J5P" firstAttribute="trailing" secondItem="Y9g-ao-PlM" secondAttribute="trailing" type="default" id="Hjx-yR-3qn"/>
+                            <constraint firstItem="jXj-LC-J5P" firstAttribute="leading" secondItem="Y9g-ao-PlM" secondAttribute="leading" type="default" id="SdQ-IY-FO6"/>
+                            <constraint firstItem="jXj-LC-J5P" firstAttribute="top" secondItem="btv-4r-vXR" secondAttribute="bottom" type="default" id="Www-jg-R6Q"/>
+                            <constraint firstItem="jXj-LC-J5P" firstAttribute="bottom" secondItem="Y9g-ao-PlM" secondAttribute="bottom" type="default" id="r1E-6D-l3S"/>
                             <constraint firstItem="btv-4r-vXR" firstAttribute="top" secondItem="Y9g-ao-PlM" secondAttribute="top" type="default" id="u5n-XJ-GEs"/>
                         </constraints>
                     </view>
@@ -230,6 +254,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppa-uf-2Nw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sov-vb-EJ6"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Messages" id="gMe-6P-UMP">
                                         <barButtonItem key="leftBarButtonItem" title="Menu" id="EPT-Zg-m0e">
@@ -240,12 +267,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Messages.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vo9-Th-owS"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ppa-uf-2Nw" firstAttribute="top" secondItem="rW1-Pv-GlO" secondAttribute="top" type="default" id="7QO-vu-p1c"/>
                             <constraint firstItem="Ppa-uf-2Nw" firstAttribute="leading" secondItem="rW1-Pv-GlO" secondAttribute="leading" type="default" id="K1b-Oh-xSi"/>
+                            <constraint firstItem="Vo9-Th-owS" firstAttribute="top" secondItem="Ppa-uf-2Nw" secondAttribute="bottom" type="default" id="LK5-QT-O6X"/>
                             <constraint firstItem="Ppa-uf-2Nw" firstAttribute="trailing" secondItem="rW1-Pv-GlO" secondAttribute="trailing" type="default" id="nlr-3s-8Hz"/>
+                            <constraint firstItem="Vo9-Th-owS" firstAttribute="leading" secondItem="rW1-Pv-GlO" secondAttribute="leading" type="default" id="oce-re-bRs"/>
+                            <constraint firstItem="Vo9-Th-owS" firstAttribute="bottom" secondItem="rW1-Pv-GlO" secondAttribute="bottom" type="default" id="wAA-Dy-wwd"/>
+                            <constraint firstItem="Vo9-Th-owS" firstAttribute="trailing" secondItem="rW1-Pv-GlO" secondAttribute="trailing" type="default" id="yqZ-8E-fF3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -257,15 +289,25 @@
             <point key="canvasLocation" x="270" y="793"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Audition.png" width="295" height="417"/>
+        <image name="Calendar.png" width="319" height="422"/>
+        <image name="Messages.png" width="296" height="424"/>
+        <image name="Profile.png" width="279" height="406"/>
+    </resources>
     <classes>
         <class className="AuditionsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AuditionsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="CalendarViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CalendarViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="revealMenu:"/>
+            </relationships>
         </class>
         <class className="ECSlidingViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ECSlidingViewController.h"/>
@@ -280,7 +322,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MessagesViewController.h"/>
             <relationships>
                 <relationship kind="action" name="revealMenu:"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
