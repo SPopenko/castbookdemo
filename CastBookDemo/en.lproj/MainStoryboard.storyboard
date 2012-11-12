@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-X9-BG7">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpf-Hz-wdg">
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HZm-vF-ZTy">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" type="user" id="7iV-r4-bXZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEJ-3o-H9X">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="yWZ-9J-MGa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="wEJ-3o-H9X" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7nc-cw-mK7"/>
+                                            <constraint firstItem="HZm-vF-ZTy" firstAttribute="top" secondItem="Lpf-Hz-wdg" secondAttribute="top" constant="8" type="user" id="FeU-V2-e7B"/>
+                                            <constraint firstAttribute="trailing" secondItem="HZm-vF-ZTy" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PVU-MS-Rp2"/>
+                                            <constraint firstItem="wEJ-3o-H9X" firstAttribute="top" secondItem="HZm-vF-ZTy" secondAttribute="bottom" constant="5" type="user" id="cow-9y-vnn"/>
+                                            <constraint firstItem="wEJ-3o-H9X" firstAttribute="leading" secondItem="Lpf-Hz-wdg" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="daa-A1-5JV"/>
+                                            <constraint firstItem="HZm-vF-ZTy" firstAttribute="leading" secondItem="Lpf-Hz-wdg" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hsg-UH-gxR"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToI-t5-C4A">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ToI-t5-C4A" firstAttribute="leading" secondItem="PJd-X9-BG7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4cs-Kb-mzb"/>
+                                    <constraint firstItem="Lpf-Hz-wdg" firstAttribute="top" secondItem="PJd-X9-BG7" secondAttribute="top" constant="20" symbolic="YES" type="default" id="AEb-jZ-AfF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lpf-Hz-wdg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Byi-JE-ouN"/>
+                                    <constraint firstAttribute="trailing" secondItem="ToI-t5-C4A" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XlX-28-srN"/>
+                                    <constraint firstItem="Lpf-Hz-wdg" firstAttribute="leading" secondItem="PJd-X9-BG7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Zqq-xZ-0MN"/>
+                                    <constraint firstAttribute="bottom" secondItem="ToI-t5-C4A" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="aKV-y4-AMW"/>
+                                    <constraint firstItem="ToI-t5-C4A" firstAttribute="top" secondItem="Lpf-Hz-wdg" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ozN-Zq-IAS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PJd-X9-BG7" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="1Ch-Vf-oqM"/>
+                            <constraint firstItem="PJd-X9-BG7" firstAttribute="top" secondItem="3" secondAttribute="top" constant="190" id="INk-7l-YBg"/>
+                            <constraint firstAttribute="centerX" secondItem="PJd-X9-BG7" secondAttribute="centerX" type="user" id="Ylq-ex-xzs"/>
+                            <constraint firstItem="PJd-X9-BG7" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="fts-dA-eCH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
