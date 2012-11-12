@@ -7,6 +7,8 @@
 //
 
 #import "CalendarViewController.h"
+#import "ECSlidingViewController.h"
+#import "MenuViewController.h"
 
 @interface CalendarViewController ()
 
@@ -14,25 +16,25 @@
 
 @implementation CalendarViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)viewWillAppear:(BOOL)animated
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    [super viewWillAppear:animated];
+    if (self.slidingViewController != nil) {
+        if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
+            self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+        }
+        self.slidingViewController.underRightViewController = nil;
+        self.slidingViewController.anchorLeftPeekAmount     = 0;
+        self.slidingViewController.anchorLeftRevealAmount   = 0;
+        
+        [self.view addGestureRecognizer:self.slidingViewController.panGesture];
+        
     }
-    return self;
 }
 
-- (void)viewDidLoad
+- (IBAction)revealMenu:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
 @end
