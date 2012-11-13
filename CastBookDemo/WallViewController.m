@@ -37,4 +37,7 @@
     [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
+- (void)dealloc {
+    [super dealloc];
+}
 @end
