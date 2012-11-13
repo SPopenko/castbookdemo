@@ -9,6 +9,7 @@
 #import "WallViewController.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
+#import "WallCell.h"
 
 @interface WallViewController ()
 
@@ -49,7 +50,7 @@
         self.slidingViewController.anchorLeftPeekAmount     = 0;
         self.slidingViewController.anchorLeftRevealAmount   = 0;
         
-        [self.view addGestureRecognizer:self.slidingViewController.panGesture];
+        //[self.view addGestureRecognizer:self.slidingViewController.panGesture];
     }
 }
 
@@ -68,24 +69,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"MovieCell";
+    WallCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[WallCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+    }
     
-    // Configure the cell...
+    [cell.palaroidView setComputerName:@"First"];
+//    cell.textLabel.text = [self.sampleItems objectAtIndex:indexPath.row];
     
     return cell;
 }

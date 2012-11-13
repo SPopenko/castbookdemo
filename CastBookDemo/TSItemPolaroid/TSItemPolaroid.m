@@ -20,10 +20,9 @@
 @synthesize bookmarkFlagType;
 @synthesize delegate;
 
-- (id) initWithFrame:(CGRect)frame {	
-    [super initWithFrame:frame];
-	
-    CGSize size = frame.size;
+-(void)commonInit
+{
+    CGSize size = self.frame.size;
     //size.width -= 10.0;
     CGFloat curlFactor = 15.0f;
     CGFloat shadowDepth = 5.0f;
@@ -50,24 +49,24 @@
     rectangle.origin.y = -18;
     rectangle.origin.x -= 25;
     
-    SSLineView *insetLine = [[SSLineView alloc] initWithFrame:CGRectMake(0, 216, frame.size.width, 2)];
+    SSLineView *insetLine = [[SSLineView alloc] initWithFrame:CGRectMake(0, 216, self.frame.size.width, 2)];
     insetLine.showInset = YES;
     insetLine.lineColor = [UIColor lightGrayColor];
     [self addSubview:insetLine];
 	[insetLine release];
     
-    computerNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 225, frame.size.width, 35)];
+    computerNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 225, self.frame.size.width, 35)];
     [computerNameLabel setText:computerName];
     [computerNameLabel setFont:[UIFont fontWithName:@"Marker Felt" size:23]];
     [computerNameLabel setTextAlignment:UITextAlignmentCenter];
     [self addSubview:computerNameLabel];
     
-    computerImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 215)];
+    computerImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 215)];
     computerImage.image = [UIImage imageNamed:@"com.apple.mac.png"];
     computerImage.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:computerImage];
 	
-	bookmarkFlag = [[UIImageView alloc] initWithFrame:CGRectMake(frame.size.width - 42, -3, 38, 52)];
+	bookmarkFlag = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width - 42, -3, 38, 52)];
 	[bookmarkFlag setImage:[UIImage imageNamed:@"bookmark_blue.png"]];
 	bookmarkFlag.clipsToBounds = NO;
 	[self addSubview:bookmarkFlag];
@@ -83,14 +82,35 @@
     pushPin.clipsToBounds = NO;
     self.clipsToBounds = NO;
     [self addSubview:pushPin];
-	[pushPin release];	
+	[pushPin release];
 	
+    size = self.frame.size;
 #ifdef kEnablePolaroidRotation
 	double randomNumber = (30 * (double)rand() / (double)RAND_MAX - 30) / 10;
 	NSLog(@"random: %f", randomNumber);
 	self.transform = CGAffineTransformMakeRotation([self degreesToRadians:randomNumber]);
 #endif
-	
+}
+
+-(id) initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if(self)
+    {
+        [self commonInit];
+    }
+    
+    return self;
+}
+
+- (id) initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if(self)
+    {
+        [self commonInit];
+    }
+    
     return self;
 }
 

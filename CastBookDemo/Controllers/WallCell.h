@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSItemPolaroid.h"
 
 @interface WallCell : UITableViewCell
+@property (retain, nonatomic) IBOutlet TSItemPolaroid *palaroidView;
 
 @end

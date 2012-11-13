@@ -26,4 +26,8 @@
     // Configure the view for the selected state
 }
 
+- (void)dealloc {
+    [_palaroidView release];
+    [super dealloc];
+}
 @end

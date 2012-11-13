@@ -15,7 +15,7 @@
 #define kTypeBookmarkBlue 1 << 5
 #define kTypeBookmarkYellow 1 << 6
 
-#define kEnablePolaroidRotation 1
+//#define kEnablePolaroidRotation 1
 
 @protocol TSItemPolaroidDelegate
 -(void) saveBookmarks;
