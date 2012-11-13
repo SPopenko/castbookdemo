@@ -2,12 +2,11 @@
 //  WallViewController.h
 //  CastBookDemo
 //
-//  Created by Anton Poluboiarynov on 11/12/12.
+//  Created by Sergey Popenko on 11/13/12.
 //  Copyright (c) 2012 softserve. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface WallViewController : UIViewController
-
+@interface WallViewController : UITableViewController
 @end

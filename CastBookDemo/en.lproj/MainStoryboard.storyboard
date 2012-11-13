@@ -155,38 +155,41 @@
             </objects>
             <point key="canvasLocation" x="1865" y="793"/>
         </scene>
-        <!--Wall View Controller - Calendar-->
-        <scene sceneID="yga-HQ-ncf">
+        <!--Wall View Controller - Wall-->
+        <scene sceneID="2Ge-FG-ZUu">
             <objects>
-                <viewController storyboardIdentifier="WallTop" title="Calendar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Ck-uo-qQi" customClass="WallViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4Wy-qm-riJ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="j7C-Lr-0cB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Wall" id="0ER-Js-Rrp">
-                                        <barButtonItem key="leftBarButtonItem" title="Menu" id="xdh-hp-IWA">
-                                            <connections>
-                                                <action selector="revealMenu:" destination="9Ck-uo-qQi" id="QIb-zP-Prv"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Wall.png" id="QT9-Lb-YXe">
-                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="04a-DD-24S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="" id="qog-yS-eBM" customClass="WallViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="183" sectionHeaderHeight="22" sectionFooterHeight="22" id="WEl-5t-EtV">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" rowHeight="183" id="Y0N-qL-VSn" customClass="WallCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="183"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qog-yS-eBM" id="WAX-Yz-uSu"/>
+                            <outlet property="delegate" destination="qog-yS-eBM" id="qwD-uY-eDY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Wall" id="1Dl-qS-QJf">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="P1F-jf-6vg">
+                            <connections>
+                                <action selector="revealMenu:" destination="qog-yS-eBM" id="JI3-aP-qw3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Df-FQ-jVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2349" y="793"/>
+            <point key="canvasLocation" x="2847" y="793"/>
         </scene>
         <!--Initial Sliding View Controller-->
         <scene sceneID="OH4-VY-0Tv">
@@ -267,43 +270,31 @@
             </objects>
             <point key="canvasLocation" x="270" y="793"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jth-rt-VUS">
+            <objects>
+                <navigationController storyboardIdentifier="WallTop" id="3Dh-0Y-Iwq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bg1-lC-6an">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qog-yS-eBM" kind="relationship" relationship="rootViewController" id="y7c-A9-Ijc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYi-ph-L2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="793"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Audition.png" width="295" height="417"/>
         <image name="Calendar.png" width="319" height="422"/>
         <image name="Messages.png" width="296" height="424"/>
         <image name="Profile.png" width="279" height="406"/>
-        <image name="Wall.png" width="337" height="436"/>
     </resources>
-    <classes>
-        <class className="AuditionsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AuditionsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="CalendarViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CalendarViewController.h"/>
-        </class>
-        <class className="ECSlidingViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ECSlidingViewController.h"/>
-        </class>
-        <class className="InitialSlidingViewController" superclassName="ECSlidingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitialSlidingViewController.h"/>
-        </class>
-        <class className="MenuViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
-        </class>
-        <class className="MessagesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MessagesViewController.h"/>
-        </class>
-        <class className="ProfileViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
-        </class>
-        <class className="WallViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WallViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
