@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController
-
+@interface ProfileViewController : UITableViewController
+- (IBAction)revealMenu:(id)sender;
 @end

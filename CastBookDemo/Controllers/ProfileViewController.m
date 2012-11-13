@@ -16,22 +16,6 @@
 
 @implementation ProfileViewController
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    if (self.slidingViewController != nil) {
-        if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
-            self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
-        }
-        self.slidingViewController.underRightViewController = nil;
-        self.slidingViewController.anchorLeftPeekAmount     = 0;
-        self.slidingViewController.anchorLeftRevealAmount   = 0;
-        
-        [self.view addGestureRecognizer:self.slidingViewController.panGesture];
-
-    }
-}
-
 - (IBAction)revealMenu:(id)sender
 {
     [self.slidingViewController anchorTopViewTo:ECRight];
