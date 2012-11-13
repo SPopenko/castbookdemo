@@ -10,6 +10,7 @@
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
 #import "WallCell.h"
+#import "BlockAlertView.h"  
 
 @interface WallViewController ()
 
@@ -65,6 +66,23 @@
     [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
+- (IBAction)captureAsset:(id)sender
+{
+    BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Upload your demo reel" message:@"SHOW HOW GOOD YOU ARE!"];
+
+    [alert addButtonWithTitle:@"Take a Video" block:^{
+//        [self showActionSheet:nil];
+    }];
+    [alert addButtonWithTitle:@"Choose From Library" block:^{
+//        [self showAlert:nil];
+    }];
+
+    [alert setDestructiveButtonWithTitle:@"Cancel" block:nil];
+    
+    [alert show];
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -74,7 +92,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

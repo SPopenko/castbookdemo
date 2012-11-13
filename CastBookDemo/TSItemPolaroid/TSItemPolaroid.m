@@ -62,7 +62,7 @@
     [self addSubview:computerNameLabel];
     
     computerImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 215)];
-    computerImage.image = [UIImage imageNamed:@"com.apple.mac.png"];
+    computerImage.image = [UIImage imageNamed:@"Cinema-Display.png"];
     computerImage.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:computerImage];
 	
