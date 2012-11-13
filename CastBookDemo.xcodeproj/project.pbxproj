@@ -32,6 +32,7 @@
 		1F31FE1C165163B800A36208 /* Audition.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE1B165163B800A36208 /* Audition.png */; };
 		1F31FE1F165166C700A36208 /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE1E165166C600A36208 /* WallViewController.m */; };
 		1F31FE211651676F00A36208 /* Wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE201651676F00A36208 /* Wall.png */; };
+		1F31FE6E1652668500A36208 /* NavigationTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE6D1652668500A36208 /* NavigationTopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,8 @@
 		1F31FE1D165166C600A36208 /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallViewController.h; sourceTree = "<group>"; };
 		1F31FE1E165166C600A36208 /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallViewController.m; sourceTree = "<group>"; };
 		1F31FE201651676F00A36208 /* Wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wall.png; sourceTree = "<group>"; };
+		1F31FE6C1652668400A36208 /* NavigationTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationTopViewController.h; path = Controllers/NavigationTopViewController.h; sourceTree = "<group>"; };
+		1F31FE6D1652668500A36208 /* NavigationTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationTopViewController.m; path = Controllers/NavigationTopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 		1F31FDDF1651231800A36208 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F31FE6C1652668400A36208 /* NavigationTopViewController.h */,
+				1F31FE6D1652668500A36208 /* NavigationTopViewController.m */,
 				1F31FDE11651236B00A36208 /* SignInViewController.h */,
 				1F31FDE21651236B00A36208 /* SignInViewController.m */,
 				1F31FE11165147B000A36208 /* InitialSlidingViewController.h */,
@@ -290,6 +295,7 @@
 				1F31FE0D165134CE00A36208 /* MessagesViewController.m in Sources */,
 				1F31FE13165147B200A36208 /* InitialSlidingViewController.m in Sources */,
 				1F31FE1F165166C700A36208 /* WallViewController.m in Sources */,
+				1F31FE6E1652668500A36208 /* NavigationTopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
