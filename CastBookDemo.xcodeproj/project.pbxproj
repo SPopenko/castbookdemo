@@ -32,6 +32,7 @@
 		1F31FE1C165163B800A36208 /* Audition.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE1B165163B800A36208 /* Audition.png */; };
 		1F31FE211651676F00A36208 /* Wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE201651676F00A36208 /* Wall.png */; };
 		1F31FE6E1652668500A36208 /* NavigationTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE6D1652668500A36208 /* NavigationTopViewController.m */; };
+		1FDE07871652ABE90047A9B5 /* JohnAppleseed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */; };
 		E48237C5165253A8000C769C /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48237C4165253A8000C769C /* WallViewController.m */; };
 		E4FCA03016525A30004FCBC6 /* WallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FCA02F16525A30004FCBC6 /* WallCell.m */; };
 		E4FCA03E16525B27004FCBC6 /* bookmark_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E4FCA03216525B27004FCBC6 /* bookmark_blue.png */; };
@@ -114,6 +115,7 @@
 		1F31FE201651676F00A36208 /* Wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wall.png; sourceTree = "<group>"; };
 		1F31FE6C1652668400A36208 /* NavigationTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationTopViewController.h; path = Controllers/NavigationTopViewController.h; sourceTree = "<group>"; };
 		1F31FE6D1652668500A36208 /* NavigationTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationTopViewController.m; path = Controllers/NavigationTopViewController.m; sourceTree = "<group>"; };
+		1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JohnAppleseed.png; sourceTree = "<group>"; };
 		E48237C3165253A8000C769C /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WallViewController.h; path = Controllers/WallViewController.h; sourceTree = "<group>"; };
 		E48237C4165253A8000C769C /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WallViewController.m; path = Controllers/WallViewController.m; sourceTree = "<group>"; };
 		E4FCA02E16525A30004FCBC6 /* WallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WallCell.h; path = Controllers/WallCell.h; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		1F31FDE01651233500A36208 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */,
 				1F31FE141651624300A36208 /* Stubs */,
 				1F31FDC816511D5C00A36208 /* Default.png */,
 				1F31FDCA16511D5C00A36208 /* Default@2x.png */,
@@ -469,6 +472,7 @@
 				E4FCA090165273D3004FCBC6 /* alert-red-button@2x.png in Resources */,
 				E4FCA091165273D3004FCBC6 /* alert-window.png in Resources */,
 				E4FCA092165273D3004FCBC6 /* alert-window@2x.png in Resources */,
+				1FDE07871652ABE90047A9B5 /* JohnAppleseed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +494,6 @@
 				1F31FE0C165134CE00A36208 /* CalendarViewController.m in Sources */,
 				1F31FE0D165134CE00A36208 /* MessagesViewController.m in Sources */,
 				1F31FE13165147B200A36208 /* InitialSlidingViewController.m in Sources */,
-				1F31FE1F165166C700A36208 /* WallViewController.m in Sources */,
 				1F31FE6E1652668500A36208 /* NavigationTopViewController.m in Sources */,
 				E48237C5165253A8000C769C /* WallViewController.m in Sources */,
 				E4FCA03016525A30004FCBC6 /* WallCell.m in Sources */,

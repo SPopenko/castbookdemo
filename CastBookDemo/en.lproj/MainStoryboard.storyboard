@@ -285,7 +285,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="corkboard.png" id="Ke0-Ie-cMi">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="JohnAppleseed.png" id="Ke0-Ie-cMi">
                                     <rect key="frame" x="10" y="10" width="65" height="65"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -658,8 +658,8 @@
     <resources>
         <image name="Audition.png" width="295" height="417"/>
         <image name="Calendar.png" width="319" height="422"/>
+        <image name="JohnAppleseed.png" width="65" height="64"/>
         <image name="Messages.png" width="296" height="424"/>
-        <image name="corkboard.png" width="320" height="460"/>
     </resources>
     <classes>
         <class className="AuditionsViewController" superclassName="UIViewController">
