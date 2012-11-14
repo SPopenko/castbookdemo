@@ -11,6 +11,7 @@
 #import "MenuViewController.h"
 #import "WallCell.h"
 #import "BlockAlertView.h"  
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface WallViewController ()
 
@@ -103,7 +104,7 @@
         cell = [[WallCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    [cell.palaroidView setComputerName:@"First"];
+    [cell.palaroidView setComputerName:@"Demo reel"];
 //    cell.textLabel.text = [self.sampleItems objectAtIndex:indexPath.row];
     
     return cell;
@@ -160,6 +161,21 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+}
+
+#pragma mark - play demo video 
+- (IBAction)playVideo:(id)sender
+{
+    NSURL *url = nil;
+    NSString *path = [NSString stringWithFormat:@"%@/demo.mp4",[[NSBundle mainBundle] resourcePath]];
+    url = [NSURL fileURLWithPath:path];
+    
+    MPMoviePlayerViewController *detailViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
+    detailViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    detailViewController.title = @"Demo reel";
+    
+    [self presentMoviePlayerViewControllerAnimated:detailViewController];
 }
 
 @end

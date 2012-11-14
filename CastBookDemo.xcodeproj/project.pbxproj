@@ -32,6 +32,10 @@
 		1F31FE1C165163B800A36208 /* Audition.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE1B165163B800A36208 /* Audition.png */; };
 		1F31FE211651676F00A36208 /* Wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FE201651676F00A36208 /* Wall.png */; };
 		1F31FE6E1652668500A36208 /* NavigationTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE6D1652668500A36208 /* NavigationTopViewController.m */; };
+		1F37AD6F1653CA7B0088296B /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37AD6E1653CA7B0088296B /* demo.png */; };
+		1F37AD751653CC510088296B /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37AD741653CC510088296B /* playButton.png */; };
+		1F37AD771653D1470088296B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F37AD761653D1460088296B /* MediaPlayer.framework */; };
+		1F37AD781653D4B90088296B /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1F37AD651653C6810088296B /* demo.mp4 */; };
 		1FDE07871652ABE90047A9B5 /* JohnAppleseed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */; };
 		E48237C5165253A8000C769C /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48237C4165253A8000C769C /* WallViewController.m */; };
 		E4FCA03016525A30004FCBC6 /* WallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FCA02F16525A30004FCBC6 /* WallCell.m */; };
@@ -115,6 +119,10 @@
 		1F31FE201651676F00A36208 /* Wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wall.png; sourceTree = "<group>"; };
 		1F31FE6C1652668400A36208 /* NavigationTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationTopViewController.h; path = Controllers/NavigationTopViewController.h; sourceTree = "<group>"; };
 		1F31FE6D1652668500A36208 /* NavigationTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationTopViewController.m; path = Controllers/NavigationTopViewController.m; sourceTree = "<group>"; };
+		1F37AD651653C6810088296B /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
+		1F37AD6E1653CA7B0088296B /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
+		1F37AD741653CC510088296B /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		1F37AD761653D1460088296B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JohnAppleseed.png; sourceTree = "<group>"; };
 		E48237C3165253A8000C769C /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WallViewController.h; path = Controllers/WallViewController.h; sourceTree = "<group>"; };
 		E48237C4165253A8000C769C /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WallViewController.m; path = Controllers/WallViewController.m; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F37AD771653D1470088296B /* MediaPlayer.framework in Frameworks */,
 				1F31FDB716511D5B00A36208 /* UIKit.framework in Frameworks */,
 				1F31FDB916511D5B00A36208 /* Foundation.framework in Frameworks */,
 				1F31FDBB16511D5B00A36208 /* CoreGraphics.framework in Frameworks */,
@@ -200,6 +209,7 @@
 		1F31FDB516511D5B00A36208 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F37AD761653D1460088296B /* MediaPlayer.framework */,
 				1F31FDB616511D5B00A36208 /* UIKit.framework */,
 				1F31FDB816511D5B00A36208 /* Foundation.framework */,
 				1F31FDBA16511D5B00A36208 /* CoreGraphics.framework */,
@@ -236,6 +246,7 @@
 		1F31FDDE1651230B00A36208 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F37AD631653C6730088296B /* Movies */,
 				1F31FDE01651233500A36208 /* Images */,
 				1F31FDCE16511D5C00A36208 /* MainStoryboard.storyboard */,
 			);
@@ -272,8 +283,10 @@
 		1F31FDE01651233500A36208 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */,
 				1F31FE141651624300A36208 /* Stubs */,
+				1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */,
+				1F37AD6E1653CA7B0088296B /* demo.png */,
+				1F37AD741653CC510088296B /* playButton.png */,
 				1F31FDC816511D5C00A36208 /* Default.png */,
 				1F31FDCA16511D5C00A36208 /* Default@2x.png */,
 				1F31FDCC16511D5C00A36208 /* Default-568h@2x.png */,
@@ -302,6 +315,14 @@
 				1F31FE151651625500A36208 /* Calendar.png */,
 			);
 			name = Stubs;
+			sourceTree = "<group>";
+		};
+		1F37AD631653C6730088296B /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				1F37AD651653C6810088296B /* demo.mp4 */,
+			);
+			name = Movies;
 			sourceTree = "<group>";
 		};
 		E4FCA03116525B27004FCBC6 /* TSItemPolaroid */ = {
@@ -473,6 +494,9 @@
 				E4FCA091165273D3004FCBC6 /* alert-window.png in Resources */,
 				E4FCA092165273D3004FCBC6 /* alert-window@2x.png in Resources */,
 				1FDE07871652ABE90047A9B5 /* JohnAppleseed.png in Resources */,
+				1F37AD6F1653CA7B0088296B /* demo.png in Resources */,
+				1F37AD751653CC510088296B /* playButton.png in Resources */,
+				1F37AD781653D4B90088296B /* demo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
