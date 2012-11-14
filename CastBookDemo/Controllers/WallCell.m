@@ -26,13 +26,6 @@
     // Configure the view for the selected state
 }
 
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    if (event.type == UITouchPhaseBegan && [[event touchesForView:_palaroidView] count] == 1) {
-        NSLog(@"Display video");
-    }
-}
-
 - (void)dealloc {
     [_palaroidView release];
     [super dealloc];

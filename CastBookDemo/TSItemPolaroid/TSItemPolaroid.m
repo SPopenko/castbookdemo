@@ -62,10 +62,10 @@
     [self addSubview:computerNameLabel];
     
     computerImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 215)];
-    computerImage.image = [UIImage imageNamed:@"Cinema-Display.png"];
+    computerImage.image = [UIImage imageNamed:@"demo.png"];
     computerImage.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:computerImage];
-	
+
 	bookmarkFlag = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width - 42, -3, 38, 52)];
 	[bookmarkFlag setImage:[UIImage imageNamed:@"bookmark_blue.png"]];
 	bookmarkFlag.clipsToBounds = NO;
