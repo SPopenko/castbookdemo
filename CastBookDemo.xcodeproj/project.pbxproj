@@ -34,6 +34,8 @@
 		1F31FE6E1652668500A36208 /* NavigationTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FE6D1652668500A36208 /* NavigationTopViewController.m */; };
 		1F37AD6F1653CA7B0088296B /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37AD6E1653CA7B0088296B /* demo.png */; };
 		1F37AD751653CC510088296B /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37AD741653CC510088296B /* playButton.png */; };
+		1F37AD771653D1470088296B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F37AD761653D1460088296B /* MediaPlayer.framework */; };
+		1F37AD781653D4B90088296B /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1F37AD651653C6810088296B /* demo.mp4 */; };
 		1FDE07871652ABE90047A9B5 /* JohnAppleseed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */; };
 		E48237C5165253A8000C769C /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48237C4165253A8000C769C /* WallViewController.m */; };
 		E4FCA03016525A30004FCBC6 /* WallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FCA02F16525A30004FCBC6 /* WallCell.m */; };
@@ -120,6 +122,7 @@
 		1F37AD651653C6810088296B /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		1F37AD6E1653CA7B0088296B /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
 		1F37AD741653CC510088296B /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		1F37AD761653D1460088296B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JohnAppleseed.png; sourceTree = "<group>"; };
 		E48237C3165253A8000C769C /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WallViewController.h; path = Controllers/WallViewController.h; sourceTree = "<group>"; };
 		E48237C4165253A8000C769C /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WallViewController.m; path = Controllers/WallViewController.m; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F37AD771653D1470088296B /* MediaPlayer.framework in Frameworks */,
 				1F31FDB716511D5B00A36208 /* UIKit.framework in Frameworks */,
 				1F31FDB916511D5B00A36208 /* Foundation.framework in Frameworks */,
 				1F31FDBB16511D5B00A36208 /* CoreGraphics.framework in Frameworks */,
@@ -205,6 +209,7 @@
 		1F31FDB516511D5B00A36208 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F37AD761653D1460088296B /* MediaPlayer.framework */,
 				1F31FDB616511D5B00A36208 /* UIKit.framework */,
 				1F31FDB816511D5B00A36208 /* Foundation.framework */,
 				1F31FDBA16511D5B00A36208 /* CoreGraphics.framework */,
@@ -491,6 +496,7 @@
 				1FDE07871652ABE90047A9B5 /* JohnAppleseed.png in Resources */,
 				1F37AD6F1653CA7B0088296B /* demo.png in Resources */,
 				1F37AD751653CC510088296B /* playButton.png in Resources */,
+				1F37AD781653D4B90088296B /* demo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
