@@ -104,7 +104,7 @@
         cell = [[WallCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    [cell.palaroidView setComputerName:@"First"];
+    [cell.palaroidView setComputerName:@"Demo reel"];
 //    cell.textLabel.text = [self.sampleItems objectAtIndex:indexPath.row];
     
     return cell;
