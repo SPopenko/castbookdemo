@@ -43,6 +43,8 @@
 		1F37ADB81654F42B0088296B /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37ADB31654F42B0088296B /* right_arrow@2x.png */; };
 		1F37ADBA1654F4C40088296B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F37ADB91654F4C40088296B /* QuartzCore.framework */; };
 		1FDE07871652ABE90047A9B5 /* JohnAppleseed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */; };
+		1FF0EA9D16552CF500D3F689 /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0EA9C16552CF500D3F689 /* ResumeViewController.m */; };
+		1FF0EAA116552F8D00D3F689 /* Resume.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0EAA016552F8D00D3F689 /* Resume.pdf */; };
 		E48237C5165253A8000C769C /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48237C4165253A8000C769C /* WallViewController.m */; };
 		E4FCA03016525A30004FCBC6 /* WallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FCA02F16525A30004FCBC6 /* WallCell.m */; };
 		E4FCA03E16525B27004FCBC6 /* bookmark_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E4FCA03216525B27004FCBC6 /* bookmark_blue.png */; };
@@ -137,6 +139,9 @@
 		1F37ADB31654F42B0088296B /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_arrow@2x.png"; sourceTree = "<group>"; };
 		1F37ADB91654F4C40088296B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JohnAppleseed.png; sourceTree = "<group>"; };
+		1FF0EA9B16552CF500D3F689 /* ResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResumeViewController.h; path = Controllers/ResumeViewController.h; sourceTree = "<group>"; };
+		1FF0EA9C16552CF500D3F689 /* ResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResumeViewController.m; path = Controllers/ResumeViewController.m; sourceTree = "<group>"; };
+		1FF0EAA016552F8D00D3F689 /* Resume.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Resume.pdf; sourceTree = "<group>"; };
 		E48237C3165253A8000C769C /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WallViewController.h; path = Controllers/WallViewController.h; sourceTree = "<group>"; };
 		E48237C4165253A8000C769C /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WallViewController.m; path = Controllers/WallViewController.m; sourceTree = "<group>"; };
 		E4FCA02E16525A30004FCBC6 /* WallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WallCell.h; path = Controllers/WallCell.h; sourceTree = "<group>"; };
@@ -262,6 +267,7 @@
 		1F31FDDE1651230B00A36208 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1FF0EA9F16552F6F00D3F689 /* PDF */,
 				1F37AD631653C6730088296B /* Movies */,
 				1F31FDE01651233500A36208 /* Images */,
 				1F31FDCE16511D5C00A36208 /* MainStoryboard.storyboard */,
@@ -292,6 +298,8 @@
 				E48237C4165253A8000C769C /* WallViewController.m */,
 				E4FCA02E16525A30004FCBC6 /* WallCell.h */,
 				E4FCA02F16525A30004FCBC6 /* WallCell.m */,
+				1FF0EA9B16552CF500D3F689 /* ResumeViewController.h */,
+				1FF0EA9C16552CF500D3F689 /* ResumeViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -360,6 +368,14 @@
 				1F37ADB31654F42B0088296B /* right_arrow@2x.png */,
 			);
 			path = resources;
+			sourceTree = "<group>";
+		};
+		1FF0EA9F16552F6F00D3F689 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				1FF0EAA016552F8D00D3F689 /* Resume.pdf */,
+			);
+			name = PDF;
 			sourceTree = "<group>";
 		};
 		E4FCA03116525B27004FCBC6 /* TSItemPolaroid */ = {
@@ -538,6 +554,7 @@
 				1F37ADB61654F42B0088296B /* left_arrow@2x.png in Resources */,
 				1F37ADB71654F42B0088296B /* right_arrow.png in Resources */,
 				1F37ADB81654F42B0088296B /* right_arrow@2x.png in Resources */,
+				1FF0EAA116552F8D00D3F689 /* Resume.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +585,7 @@
 				E4FCA0621652736C004FCBC6 /* BlockBackground.m in Sources */,
 				E4FCA0631652736C004FCBC6 /* BlockTextPromptAlertView.m in Sources */,
 				1F37ADB41654F42B0088296B /* CKCalendarView.m in Sources */,
+				1FF0EA9D16552CF500D3F689 /* ResumeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
