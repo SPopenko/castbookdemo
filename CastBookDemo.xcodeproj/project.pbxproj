@@ -18,7 +18,7 @@
 		1F31FDCD16511D5C00A36208 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FDCC16511D5C00A36208 /* Default-568h@2x.png */; };
 		1F31FDD016511D5C00A36208 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F31FDCE16511D5C00A36208 /* MainStoryboard.storyboard */; };
 		1F31FDE31651236B00A36208 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDE21651236B00A36208 /* SignInViewController.m */; };
-		1F31FDEF165129E400A36208 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDEC165129E400A36208 /* ECSlidingViewController.m */; };
+		1F31FDEF165129E400A36208 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDEC165129E400A36208 /* ECSlidingViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		1F31FDF0165129E400A36208 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDEE165129E400A36208 /* UIImage+ImageWithUIView.m */; };
 		1F31FDFA165131BF00A36208 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDF9165131BF00A36208 /* MenuViewController.m */; };
 		1F31FDFD165133EB00A36208 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F31FDFC165133EB00A36208 /* ProfileViewController.m */; };
@@ -36,7 +36,7 @@
 		1F37AD751653CC510088296B /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37AD741653CC510088296B /* playButton.png */; };
 		1F37AD771653D1470088296B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F37AD761653D1460088296B /* MediaPlayer.framework */; };
 		1F37AD781653D4B90088296B /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1F37AD651653C6810088296B /* demo.mp4 */; };
-		1F37ADB41654F42B0088296B /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F37ADAE1654F42B0088296B /* CKCalendarView.m */; };
+		1F37ADB41654F42B0088296B /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F37ADAE1654F42B0088296B /* CKCalendarView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		1F37ADB51654F42B0088296B /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37ADB01654F42B0088296B /* left_arrow.png */; };
 		1F37ADB61654F42B0088296B /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37ADB11654F42B0088296B /* left_arrow@2x.png */; };
 		1F37ADB71654F42B0088296B /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37ADB21654F42B0088296B /* right_arrow.png */; };
