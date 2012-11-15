@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[UINavigationBar appearance] setTintColor:[UIColor brownColor]];
     UIStoryboard *storyboard;
     storyboard = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
     self.topViewController = [storyboard instantiateViewControllerWithIdentifier:@"WallTop"];
