@@ -20,7 +20,7 @@
                                         <subviews>
                                             <textField clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DemoLogin" placeholder="Login" minimumFontSize="17" clearButtonMode="whileEditing" id="HZm-vF-ZTy">
                                                 <rect key="frame" x="20" y="8" width="240" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="2" id="7g3-Ht-wTj"/>
@@ -28,7 +28,7 @@
                                             </textField>
                                             <textField clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" placeholder="Password" minimumFontSize="17" id="wEJ-3o-H9X">
                                                 <rect key="frame" x="20" y="43" width="240" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="2" id="YbF-7w-6gi"/>
@@ -57,6 +57,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="loginView" destination="Lpf-Hz-wdg" id="AGx-iJ-h6F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -769,6 +772,9 @@
         </class>
         <class className="SignInViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SignInViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="loginView" candidateClass="UIView"/>
+            </relationships>
         </class>
         <class className="TSItemPolaroid" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TSItemPolaroid.h"/>

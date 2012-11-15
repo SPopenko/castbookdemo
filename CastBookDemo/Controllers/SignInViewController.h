@@ -10,4 +10,6 @@
 
 @interface SignInViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UIView *loginView;
+
 @end

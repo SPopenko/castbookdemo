@@ -7,7 +7,7 @@
 //
 
 #import "SignInViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
 @interface SignInViewController ()
 
 @end
@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.loginView.layer.cornerRadius = 10.0f;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +36,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_loginView release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setLoginView:nil];
+    [super viewDidUnload];
+}
 @end
