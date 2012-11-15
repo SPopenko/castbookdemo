@@ -14,6 +14,12 @@
 
 @implementation ResumeViewController
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundLogin.png"]];
+    [super viewWillAppear:animated];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
