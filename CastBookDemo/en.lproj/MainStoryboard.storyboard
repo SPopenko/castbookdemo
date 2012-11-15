@@ -113,13 +113,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Calendar.png" id="jXj-LC-J5P">
-                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" id="rMR-FI-uZw" customClass="CKCalendarView">
+                                <rect key="frame" x="10" y="80" width="300" height="320"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="calendarView" destination="rMR-FI-uZw" id="C83-S4-2c2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AY-WT-xRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -674,7 +678,6 @@
     </scenes>
     <resources>
         <image name="Audition.png" width="295" height="417"/>
-        <image name="Calendar.png" width="319" height="422"/>
         <image name="JohnAppleseed.png" width="65" height="64"/>
         <image name="Messages.png" width="296" height="424"/>
         <image name="playButton.png" width="110" height="110"/>
@@ -683,11 +686,19 @@
         <class className="AuditionsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AuditionsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
+        <class className="CKCalendarView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CKCalendarView.h"/>
+        </class>
         <class className="CalendarViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CalendarViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="revealMenu:"/>
+                <relationship kind="outlet" name="calendarView" candidateClass="CKCalendarView"/>
+            </relationships>
         </class>
         <class className="ECSlidingViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ECSlidingViewController.h"/>

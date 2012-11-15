@@ -348,7 +348,7 @@
 }
 
 - (void)setMonthShowing:(NSDate *)aMonthShowing {
-    _monthShowing = [self firstDayOfMonthContainingDate:aMonthShowing];
+    _monthShowing = [[self firstDayOfMonthContainingDate:aMonthShowing] retain];
 
     self.titleLabel.text = [self.dateFormatter stringFromDate:_monthShowing];
     [self setNeedsLayout];
