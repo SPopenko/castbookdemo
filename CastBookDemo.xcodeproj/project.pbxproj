@@ -42,6 +42,8 @@
 		1F37ADB71654F42B0088296B /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37ADB21654F42B0088296B /* right_arrow.png */; };
 		1F37ADB81654F42B0088296B /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37ADB31654F42B0088296B /* right_arrow@2x.png */; };
 		1F37ADBA1654F4C40088296B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F37ADB91654F4C40088296B /* QuartzCore.framework */; };
+		1FA289B8165554EB007FD88B /* backgroundLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA289B7165554EB007FD88B /* backgroundLogin.png */; };
+		1FA289BD1655662F007FD88B /* backgroundLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA289BC1655662F007FD88B /* backgroundLight.png */; };
 		1FDE07871652ABE90047A9B5 /* JohnAppleseed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */; };
 		1FF0EA9D16552CF500D3F689 /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0EA9C16552CF500D3F689 /* ResumeViewController.m */; };
 		1FF0EAA116552F8D00D3F689 /* Resume.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0EAA016552F8D00D3F689 /* Resume.pdf */; };
@@ -138,6 +140,8 @@
 		1F37ADB21654F42B0088296B /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
 		1F37ADB31654F42B0088296B /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_arrow@2x.png"; sourceTree = "<group>"; };
 		1F37ADB91654F4C40088296B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1FA289B7165554EB007FD88B /* backgroundLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundLogin.png; sourceTree = "<group>"; };
+		1FA289BC1655662F007FD88B /* backgroundLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundLight.png; sourceTree = "<group>"; };
 		1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JohnAppleseed.png; sourceTree = "<group>"; };
 		1FF0EA9B16552CF500D3F689 /* ResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResumeViewController.h; path = Controllers/ResumeViewController.h; sourceTree = "<group>"; };
 		1FF0EA9C16552CF500D3F689 /* ResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResumeViewController.m; path = Controllers/ResumeViewController.m; sourceTree = "<group>"; };
@@ -308,6 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				1F31FE141651624300A36208 /* Stubs */,
+				1FA289B7165554EB007FD88B /* backgroundLogin.png */,
+				1FA289BC1655662F007FD88B /* backgroundLight.png */,
 				1FDE07861652ABE90047A9B5 /* JohnAppleseed.png */,
 				1F37AD6E1653CA7B0088296B /* demo.png */,
 				1F37AD741653CC510088296B /* playButton.png */,
@@ -555,6 +561,8 @@
 				1F37ADB71654F42B0088296B /* right_arrow.png in Resources */,
 				1F37ADB81654F42B0088296B /* right_arrow@2x.png in Resources */,
 				1FF0EAA116552F8D00D3F689 /* Resume.pdf in Resources */,
+				1FA289B8165554EB007FD88B /* backgroundLogin.png in Resources */,
+				1FA289BD1655662F007FD88B /* backgroundLight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,13 @@
 
 @implementation ProfileViewController
 
+- (void) viewDidLoad
+{
+    [super viewDidLoad];
+    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"corkboard.png"]];
+    [self.tableView setBackgroundView:background];
+}
+
 - (IBAction)revealMenu:(id)sender
 {
     [self.slidingViewController anchorTopViewTo:ECRight];
