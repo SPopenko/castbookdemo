@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AuditionsViewController : UIViewController
-
-@property(nonatomic,retain) IBOutlet UITableView *tableView;
+@interface AuditionsViewController : UITableViewController
 
 @end
