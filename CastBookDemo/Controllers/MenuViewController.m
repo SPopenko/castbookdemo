@@ -18,7 +18,7 @@
 
 - (void)awakeFromNib
 {
-    self.menuItems = [NSArray arrayWithObjects:@"Wall", @"Profile", @"Messages", @"Auditions", @"Calendar", nil];
+    self.menuItems = [NSArray arrayWithObjects:@"Demo reel", @"Profile", @"Messages", @"Auditions", @"Calendar", nil];
 }
 
 - (void)viewDidLoad
